@@ -16,6 +16,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter basename="/movie-app">
+
         <App />
       </BrowserRouter>
     </Provider>
