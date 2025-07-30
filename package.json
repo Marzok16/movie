@@ -3,7 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-   "homepage": "https://Marzok16.github.io/movie",
+   "homepage": "https://marzok16.github.io/movie",
+
   "scripts": {
     "dev": "vite",
     "build": "vite build",
