@@ -3,7 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://marzok16.github.io/movie-app",
+ "homepage": "https://Marzok16.github.io/movie-app",
+
   "scripts": {
     "dev": "vite",
     "build": "vite build",

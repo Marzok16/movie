@@ -1,4 +1,3 @@
-// src/App.jsx
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import LangContext from "./context/lang";
@@ -14,12 +13,12 @@ const Login = lazy(() => import("./pages/Login"));
 const Register = lazy(() => import("./pages/Register"));
 const Details = lazy(() => import("./pages/Details"));
 const NotFound = lazy(() => import("./pages/NotFound"));
+
 function App() {
   const [lang, setLang] = useState("en");
   const dispatch = useDispatch();
   const { user } = useSelector((state) => state.user);
 
-  // Handle watchlist state when user changes
   useEffect(() => {
     if (user) {
       dispatch(loadUserWatchlist(user.email));
@@ -43,7 +42,7 @@ function App() {
         <Header />
         <Suspense fallback={<div className="text-center mt-5">Loading...</div>}>
           <Routes>
-            <Route path="/movie-app/" element={<Mainpage />} />
+            <Route path="/" element={<Mainpage />} />
             <Route path="/watchlist" element={<WatchList />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
