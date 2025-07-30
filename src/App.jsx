@@ -43,12 +43,12 @@ function App() {
         <Header />
         <Suspense fallback={<div className="text-center mt-5">Loading...</div>}>
           <Routes>
-            <Route path="/" element={<Mainpage />} />
+            <Route path="/movie-app/" element={<Mainpage />} />
             <Route path="/watchlist" element={<WatchList />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/movie/Details/:id" element={<Details />} />
-            
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
       </LangContext.Provider>
